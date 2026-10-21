@@ -1,0 +1,37 @@
+             Prefix Verb   URI Pattern                                    Controller#Action
+    festival_stages GET    /festivals/:festival_id/stages(.:format)       stages#index
+                    POST   /festivals/:festival_id/stages(.:format)       stages#create
+     festival_stage GET    /festivals/:festival_id/stages/:id(.:format)   stages#show
+                    PATCH  /festivals/:festival_id/stages/:id(.:format)   stages#update
+                    PUT    /festivals/:festival_id/stages/:id(.:format)   stages#update
+                    DELETE /festivals/:festival_id/stages/:id(.:format)   stages#destroy
+      artist_tracks GET    /artists/:artist_id/tracks(.:format)           tracks#index
+                    POST   /artists/:artist_id/tracks(.:format)           tracks#create
+              track GET    /tracks/:id(.:format)                          tracks#show
+                    PATCH  /tracks/:id(.:format)                          tracks#update
+                    PUT    /tracks/:id(.:format)                          tracks#update
+                    DELETE /tracks/:id(.:format)                          tracks#destroy
+   attendee_tickets GET    /attendees/:attendee_id/tickets(.:format)      tickets#index
+                    POST   /attendees/:attendee_id/tickets(.:format)      tickets#create
+    attendee_ticket GET    /attendees/:attendee_id/tickets/:id(.:format)  tickets#show
+                    PATCH  /attendees/:attendee_id/tickets/:id(.:format)  tickets#update
+                    PUT    /attendees/:attendee_id/tickets/:id(.:format)  tickets#update
+                    DELETE /attendees/:attendee_id/tickets/:id(.:format)  tickets#destroy
+   festival_tickets GET    /festivals/:festival_id/tickets(.:format)      tickets#index
+                    POST   /festivals/:festival_id/tickets(.:format)      tickets#create
+    festival_ticket GET    /festivals/:festival_id/tickets/:id(.:format)  tickets#show
+                    PATCH  /festivals/:festival_id/tickets/:id(.:format)  tickets#update
+                    PUT    /festivals/:festival_id/tickets/:id(.:format)  tickets#update
+                    DELETE /festivals/:festival_id/tickets/:id(.:format)  tickets#destroy
+ stage_performances GET    /stages/:stage_id/performances(.:format)       performances#index
+                    POST   /stages/:stage_id/performances(.:format)       performances#create
+  stage_performance GET    /stages/:stage_id/performances/:id(.:format)   performances#show
+                    PATCH  /stages/:stage_id/performances/:id(.:format)   performances#update
+                    PUT    /stages/:stage_id/performances/:id(.:format)   performances#update
+                    DELETE /stages/:stage_id/performances/:id(.:format)   performances#destroy
+artist_performances GET    /artists/:artist_id/performances(.:format)     performances#index
+                    POST   /artists/:artist_id/performances(.:format)     performances#create
+ artist_performance GET    /artists/:artist_id/performances/:id(.:format) performances#show
+                    PATCH  /artists/:artist_id/performances/:id(.:format) performances#update
+                    PUT    /artists/:artist_id/performances/:id(.:format) performances#update
+                    DELETE /artists/:artist_id/performances/:id(.:format) performances#destroy

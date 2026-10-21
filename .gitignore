@@ -13,4 +13,8 @@
 .idea/
 .vscode/
 
+# Local Bundler settings and installed gems
+/.bundle/
+/vendor/bundle/
+
 # NOTE: db/schema.rb is NOT ignored. It is a deliverable.
